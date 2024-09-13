@@ -22,25 +22,41 @@
             overflow: hidden;
         }
 
-        /* Main content */
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        /* Container for the main content */
+        .content-container {
+            background-color: #F3F3F3;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            margin: auto;
             text-align: center;
-            z-index: 1;
+            position: relative;
+            top: 20%;
         }
 
         h1 {
-            font-size: 4rem;
+            font-size: 3rem;
             color: #333;
         }
 
         p {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: #666;
+        }
+
+        .key-info {
+            text-align: left;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .key-info span {
+            font-weight: bold;
+        }
+
+        .potato-image {
+            margin-top: 20px;
         }
 
         .links a {
@@ -56,6 +72,14 @@
         .links a:hover {
             background-color: #0056b3;
         }
+
+        .tagline {
+            margin-top: 15px;
+            font-size: 1rem;
+            color: #555;
+            font-style: italic;
+        }
+
     </style>
 </head>
 <body>
@@ -67,15 +91,32 @@
     </video>
 
     <!-- Main Content -->
-    <div class="container">
+    <div class="content-container">
         <h1>$SPUDLY</h1>
         <p>The Immovable Spud</p>
-        <img src="IMMOVABLE SPUD.png" alt="Immovable Spud" width="300px">
-        <p>Not fazed, just growing...</p>
+
+        <!-- Key Info Section -->
+        <div class="key-info">
+            <p><span>Supply:</span> 1B  |  <span>Initial Launch:</span> Moonshot</p>
+            <p>CoinGecko  |  CoinMarketCap</p>
+            <p>Twitter  |  Telegram  |  Solscan  |  Dextools  |  Dexscreener</p>
+        </div>
+
+        <!-- Potato Image -->
+        <div class="potato-image">
+            <img src="IMMOVABLE SPUD.png" alt="Immovable Spud" width="300px">
+        </div>
+
+        <!-- Links Section -->
         <div class="links">
             <a href="https://t.me/immovablespud" target="_blank">Telegram</a>
             <a href="#" target="_blank">CoinGecko</a>
             <a href="#" target="_blank">CoinMarketCap</a>
+        </div>
+
+        <!-- Tagline -->
+        <div class="tagline">
+            Not fazed, just growing...
         </div>
     </div>
 
