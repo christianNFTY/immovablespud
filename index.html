@@ -1,107 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$SPUDLY - The Immovable Spud</title>
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #FAF3EE;
-            overflow: hidden;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$SPUDLY - The Immovable Spud</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
-        /* Background Video */
-        .video-background {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            z-index: -1;
-        }
+    /* Background Video */
+    .video-background {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
 
-        /* Container for the main content */
-        .content-container {
-            background-color: #E7DFD6; /* Light beige box color */
-            padding: 40px; /* Increase padding to give more space inside the box */
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 500px;
-            height: auto;
-            text-align: center;
-        }
+    /* Box Style */
+    .content-container {
+      background-color: #F3F3F3;
+      padding: 40px;
+      width: 480px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
 
-        h1 {
-            font-size: 2.5rem; /* Keep the title larger */
-            color: #333;
-            margin-bottom: 20px;
-        }
+    h1 {
+      font-size: 3rem;
+      color: #333;
+    }
 
-        p {
-            font-size: 1rem; /* Smaller text for the "Supply" info */
-            color: #666;
-        }
+    p {
+      font-size: 1.1rem;
+      color: #666;
+    }
 
-        .key-info {
-            text-align: left;
-            margin-bottom: 25px; /* Spacing between text and potato image */
-            font-size: 1rem;
-            line-height: 1.6;
-        }
+    /* Smaller text */
+    .key-info {
+      text-align: center;
+      font-size: 1rem;
+      color: #666;
+      margin-top: 20px;
+    }
 
-        .key-info span {
-            font-weight: bold;
-        }
+    .key-info span {
+      font-weight: bold;
+    }
 
-        .potato-image {
-            margin-top: 40px; /* Larger space between text and potato */
-        }
+    /* Potato Image */
+    .potato-image {
+      margin-top: 30px;
+    }
 
-        .tagline {
-            margin-top: 20px;
-            font-size: 1rem; /* Keep tagline smaller */
-            color: #555;
-            font-style: italic;
-        }
+    img {
+      width: 250px; /* Reduced size */
+    }
 
-    </style>
+    /* Tagline */
+    .tagline {
+      margin-top: 20px;
+      font-size: 1rem;
+      color: #555;
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
+  <!-- Background Video -->
+  <video autoplay muted loop class="video-background">
+    <source src="SPUDLYFALL.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
 
-    <!-- Background Video -->
-    <video autoplay muted loop class="video-background">
-        <source src="SPUDLYFALL.webm" type="video/webm">
-        Your browser does not support the video tag.
-    </video>
+  <!-- Main Content -->
+  <div class="content-container">
+    <h1>$SPUDLY</h1>
+    <p>The Immovable Spud</p>
 
-    <!-- Main Content -->
-    <div class="content-container">
-        <h1>$SPUDLY</h1>
-        <p>The Immovable Spud</p>
-
-        <!-- Key Info Section -->
-        <div class="key-info">
-            <p><span>Supply:</span> 1B  |  <span>Initial Launch:</span> Moonshot</p>
-            <p>CoinGecko  |  CoinMarketCap</p>
-            <p>Twitter  |  Telegram  |  Solscan  |  Dextools  |  Dexscreener</p>
-        </div>
-
-        <!-- Potato Image -->
-        <div class="potato-image">
-            <img src="IMMOVABLE SPUD.png" alt="Immovable Spud" width="200px">
-        </div>
-
-        <!-- Tagline -->
-        <div class="tagline">
-            Not fazed, just growing...
-        </div>
+    <!-- Key Info Section -->
+    <div class="key-info">
+      <p><span>Supply:</span> 1B | <span>Initial Launch:</span> Moonshot</p>
+      <p>CoinGecko | CoinMarketCap</p>
+      <p>Twitter | Telegram | Solscan | Dextools | Dexscreener</p>
     </div>
 
+    <!-- Potato Image -->
+    <div class="potato-image">
+      <img src="IMMOVABLE SPUD.png" alt="Immovable Spud">
+    </div>
+
+    <!-- Tagline -->
+    <div class="tagline">
+      Not fazed, just growing...
+    </div>
+  </div>
 </body>
 </html>
