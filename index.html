@@ -1,110 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>$SPUDLY - The Immovable Spud</title>
-  <style>
-    body, html {
-      height: 100%;
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$SPUDLY - The Immovable Spud</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-    /* Background Video */
-    .video-background {
-      position: fixed;
-      right: 0;
-      bottom: 0;
-      min-width: 100%;
-      min-height: 100%;
-      z-index: -1;
-      overflow: hidden;
-    }
+        /* Background Video */
+        .video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
 
-    /* Box Style */
-    .content-container {
-      background-color: #F3F3F3;
-      padding: 40px;
-      width: 480px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      margin: auto;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+        /* Box Style */
+        .content-container {
+            background-color: #F3F3F3;
+            padding: 40px;
+            width: 480px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: auto;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
 
-    h1 {
-      font-size: 3rem;
-      color: #333;
-    }
+        h1 {
+            font-size: 3rem;
+            color: #333;
+        }
 
-    p {
-      font-size: 1.1rem;
-      color: #666;
-    }
+        p {
+            font-size: 1.1rem;
+            color: #666;
+        }
 
-    /* Smaller text */
-    .key-info {
-      text-align: center;
-      font-size: 0.6rem;
-      color: #666;
-      margin-top: 40px;
-    }
+        .key-info {
+            text-align: left;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
 
-    .key-info span {
-      font-weight: bold;
-    }
+        .key-info span {
+            font-weight: bold;
+        }
 
-    /* Potato Image */
-    .potato-image {
-      margin-top: 40px;
-    }
+        .potato-image {
+            margin-top: 20px;
+        }
 
-    img {
-      width: 250px; /* Reduced size */
-    }
+        .tagline {
+            margin-top: 15px;
+            font-size: 1rem;
+            color: #555;
+            font-style: italic;
+        }
 
-    /* Tagline */
-    .tagline {
-      margin-top: 20px;
-      font-size: 0.7rem;
-      color: #555;
-      font-style: italic;
-    }
-  </style>
+    </style>
 </head>
 <body>
-  <!-- Background Video -->
-  <video autoplay muted loop class="video-background">
+
+<!-- Background Video -->
+<video autoplay muted loop class="video-background">
     <source src="SPUDLYFALL.webm" type="video/webm">
     Your browser does not support the video tag.
-  </video>
+</video>
 
-  <!-- Main Content -->
-  <div class="content-container">
+<!-- Main Content -->
+<div class="content-container">
     <h1>$SPUDLY</h1>
     <p>The Immovable Spud</p>
 
     <!-- Key Info Section -->
     <div class="key-info">
-      <p><span>Supply:</span> 1B | <span>Initial Launch:</span> Moonshot</p>
-      <p>CoinGecko | CoinMarketCap</p>
-      <p>Twitter | Telegram | Solscan | Dextools | Dexscreener</p>
+        <p><span>Supply:</span> 1B | <span>Initial Launch:</span> Moonshot</p>
+        <p>CoinGecko | CoinMarketCap</p>
+        <p>Twitter | Telegram | Solscan | Dextools | Dexscreener</p>
     </div>
 
     <!-- Potato Image -->
     <div class="potato-image">
-      <img src="IMMOVABLE SPUD.png" alt="Immovable Spud">
+        <img src="IMMOVABLE SPUD.png" alt="Immovable Spud" width="300px">
     </div>
 
     <!-- Tagline -->
     <div class="tagline">
-      Not fazed, just growing...
+        Not fazed, just growing...
     </div>
-  </div>
+</div>
+
 </body>
 </html>
+
