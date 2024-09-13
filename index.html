@@ -8,7 +8,11 @@
         body, html {
             height: 100%;
             margin: 0;
+            overflow: hidden; /* Prevent scrolling */
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         /* Background Video */
@@ -25,14 +29,11 @@
         /* Container for the main content */
         .content-container {
             background-color: #F3F3F3;
-            padding: 30px;
+            padding: 40px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 500px;
-            margin: auto;
             text-align: center;
-            position: relative;
-            top: 20%;
         }
 
         h1 {
@@ -59,20 +60,6 @@
             margin-top: 20px;
         }
 
-        .links a {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .links a:hover {
-            background-color: #0056b3;
-        }
-
         .tagline {
             margin-top: 15px;
             font-size: 1rem;
@@ -86,7 +73,7 @@
 
     <!-- Background Video -->
     <video autoplay muted loop class="video-background">
-        <source src="SUPDLY AUTUMN.mp4" type="video/mp4">
+        <source src="SPUDLYFALL.webm" type="video/webm">
         Your browser does not support the video tag.
     </video>
 
@@ -105,13 +92,6 @@
         <!-- Potato Image -->
         <div class="potato-image">
             <img src="IMMOVABLE SPUD.png" alt="Immovable Spud" width="300px">
-        </div>
-
-        <!-- Links Section -->
-        <div class="links">
-            <a href="https://t.me/immovablespud" target="_blank">Telegram</a>
-            <a href="#" target="_blank">CoinGecko</a>
-            <a href="#" target="_blank">CoinMarketCap</a>
         </div>
 
         <!-- Tagline -->
