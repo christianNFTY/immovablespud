@@ -32,41 +32,89 @@
             text-align: center;
             margin: auto;
             position: relative;
-            top: 50%;
+            top: 45%; /* Move the whole content a little higher */
             transform: translateY(-50%);
         }
 
         h1 {
             font-size: 3rem;
             color: #333;
-            margin-bottom: 2px; /* Decrease spacing */
+            margin-bottom: 5px;
         }
 
         p.tagline {
             font-size: 1rem;
             color: #555;
-            font-style: Bold;
-            margin-top: 2px; /* Move tagline closer */
+            font-style: italic;
+            margin-top: 5px;
         }
 
         p {
-            font-size: 0.9rem; /* Make the text smaller */
+            font-size: 1rem;
             color: #666;
         }
 
+        /* Adjusted font size for the smaller info */
         .key-info {
             text-align: left;
-            margin-bottom: 40px;
-            margin-top: 40px; 
-            font-size: 0.9rem; /* Make the key info smaller */
+            margin-bottom: 20px;
+            font-size: 1rem;
         }
 
         .key-info span {
             font-weight: bold;
         }
 
+        /* Adjust Potato image size */
         .potato-image {
             margin-top: 20px;
+            width: 240px; /* Smaller size */
+        }
+
+        /* Text under the potato, smaller and italic */
+        .footer-text {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Button Links */
+        .button-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .button-links a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        .button-links a:hover {
+            background-color: #0056b3;
+        }
+        
+        /* New section for supply, launch, CA */
+        .supply-info {
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+
+        .supply-info p {
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        /* Fun text placeholder */
+        .funny-text {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 20px;
         }
 
     </style>
@@ -86,18 +134,32 @@
 
     <!-- Key Info Section -->
     <div class="key-info">
-        <p><span>Supply:</span> 1B | <span>Initial Launch:</span> Moonshot</p>
-        <p>CoinGecko | CoinMarketCap</p>
-        <p>Twitter | Telegram | Solscan | Dextools | Dexscreener</p>
+        <p><span>Supply:</span> 1B | <span>Initial Launch:</span> Moonshot | CA: [Insert Contract Address]</p>
+    </div>
+
+    <!-- Funny Text Section -->
+    <div class="funny-text">
+        <p>Still growing... but always looking grounded!</p>
+        <p>Hodl on and potato on!</p>
     </div>
 
     <!-- Potato Image -->
     <div class="potato-image">
-        <img src="IMMOVABLE SPUD.png" alt="Immovable Spud" width="150px">
+        <img src="IMMOVABLE SPUD.png" alt="Immovable Spud" width="240px">
     </div>
 
-    <!-- Tagline -->
-    <div class="tagline">
+    <!-- Button Links -->
+    <div class="button-links">
+        <a href="#">CoinGecko</a>
+        <a href="#">CoinMarketCap</a>
+        <a href="#">Telegram</a>
+        <a href="#">Twitter</a>
+        <a href="#">Solscan</a>
+        <a href="#">DexTools</a>
+    </div>
+
+    <!-- Footer Text under the potato -->
+    <div class="footer-text">
         Not fazed, just growing...
     </div>
 </div>
